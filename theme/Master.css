@@ -60,6 +60,7 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 1rem;
 }
 
 .showcase-escuela .nombre {
@@ -73,7 +74,7 @@ li {
 }
 
 .logo img {
-    width: 4.5rem;
+    width: 5rem;
     max-width: 100%;
     height: auto;
     filter: drop-shadow(2px 4px 8px rgba(14, 14, 88, 0.808))
@@ -81,6 +82,7 @@ li {
 
 .showcase-navbar .navbar {
     display: flex;
+    margin-top: 0.5rem;
     
 }
 
@@ -93,8 +95,8 @@ li {
     align-items: center;
     color:  rgba(14, 14, 88, 0.808);
     font-weight: 600;
-    padding: 1.5rem 0.4rem;
-    font-size: 1rem;
+    padding: 1.6rem 0.6rem;
+    font-size: 1.3rem;
     height: 1.5rem;
     transition: all ease 0.4s;
 }
@@ -145,6 +147,7 @@ li {
     ". aleman estudiar-imagen estudiar-imagen español ."
     "catalan . estudiar-imagen estudiar-imagen . portugues";
     padding: 1rem;
+    font-size: 1rem;
 }
 
 .estudiar-container div {
@@ -155,8 +158,8 @@ li {
 }
 
 .estudiar-container img {
-    width: 4.5rem;
-    height: 3rem;
+    width: 9rem;
+    height: 6rem;
 }
 
 .estudiar-imagen img {
@@ -217,6 +220,7 @@ li {
     background:rgb(14, 14, 88);
     padding: 0.2rem;
     margin-top: 3rem;
+    font-size: 1.5rem;
 }
 
 .institut-container {
@@ -229,13 +233,14 @@ li {
     "metodologia institut-imagen niveles"
     "metodologia institut-imagen pruebas"
     "profesorado institut-imagen examenes";
-    font-size: 0.4rem;
-    line-height: 0.7rem;
-    padding: 1rem 0.8rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 1rem 2rem;
 }
 
 .institut-container h3 {
     color:rgb(14, 14, 88);
+    padding-bottom: 1rem;
 }
 
 .metodologia {
@@ -250,8 +255,9 @@ li {
 }
 
 .institut-imagen img {
-    width: 10rem;
-    height: 10rem;
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 10rem;
 }
 
 .niveles {
@@ -286,7 +292,8 @@ li {
 
 .mapa-responsive{
     margin-left:2rem;
-    height:60vh;
+    height:70vh;
+    width: 50vh;
 
 }
 
@@ -294,4 +301,9 @@ li {
     height:100%;
     width:100%;
     box-shadow: 2px 2px 15px black;
+}
+
+.datos-contacto{
+    font-size: 2rem;
+    line-height: 4rem;
 }
