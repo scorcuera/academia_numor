@@ -1,0 +1,6 @@
+﻿Cuenta de ftp
+iei2017@ieiorg.es
+password
+yomeloguisoyomelocomo
+directorio: formularios.
+
