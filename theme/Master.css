@@ -347,12 +347,18 @@ main {
     right: -15%;
     width: 600px;
     height: 600px;
+    opacity: 70%;
 }
 .bola4{
-    bottom: 50%;
+    position: absolute;
+    right: -5%;
+    top: -7%;
 }
 
 .bola5{
-    bottom: 50%;
-    right: 10%;
+    position: absolute;
+    left: -15%;
+    bottom: -100%;
+    width: 800px;
+    height: 800px;
 }
