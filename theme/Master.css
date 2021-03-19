@@ -39,11 +39,14 @@ li {
 
 .big-container {
     display: grid;
+    background-color: white;
+    z-index: 20;
     height: 100vh;
     grid-template-rows: 1fr 4fr;
     grid-template-areas: 
         "showcase"
         "hero-container";
+        
 }
 
 .showcase {
@@ -109,6 +112,7 @@ li {
 .hero-container {
     grid-area: hero-container;
     height:67vh;
+    z-index: 20;
 }
 
 .hero-video {
@@ -166,6 +170,7 @@ li {
     width: 85%;
     height: auto;
 }
+
 
 .idioma img{
     filter: brightness(0.5) grayscale(0.1);
@@ -306,4 +311,48 @@ li {
 .datos-contacto{
     font-size: 2rem;
     line-height: 4rem;
+}
+
+.idioma{
+    z-index: 10;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    z-index: -2;
+}
+.bolas{
+    position: relative;
+    background-color: blue;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    z-index: 1;
+}
+
+.bola1{
+    position: absolute;
+    left: -11%;
+    top: -5%;
+    z-index: 2;
+    width: 400px;
+    height: 400px;
+
+}
+
+.bola3{
+    position: absolute;
+    top: 50%;
+    right: -15%;
+    width: 600px;
+    height: 600px;
+}
+.bola4{
+    bottom: 50%;
+}
+
+.bola5{
+    bottom: 50%;
+    right: 10%;
 }
