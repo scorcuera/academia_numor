@@ -49,7 +49,7 @@ li {
 .showcase {
     grid-area: showcase;
     display: flex;
-    height: 15rem;
+    height: 33vh;
     flex-direction: column;
     align-items: center;
     padding: 0.5rem 0;
@@ -108,12 +108,12 @@ li {
 
 .hero-container {
     grid-area: hero-container;
-    height:100%;
+    height:67vh;
 }
 
 .hero-video {
     width:100%;
-    height:60%;
+    height:55vh;
     position: relative;
 }
 
@@ -233,8 +233,8 @@ li {
     "metodologia institut-imagen niveles"
     "metodologia institut-imagen pruebas"
     "profesorado institut-imagen examenes";
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1rem;
+    line-height: 1.8rem;
     padding: 1rem 2rem;
 }
 
