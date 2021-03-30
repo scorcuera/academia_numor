@@ -213,8 +213,19 @@ li {
 
 .btn-horaris {
     color: white;
-    background: rgb(14, 14, 88);
-    padding: 0.2rem;
+    background: rgb(1, 1, 117);
+    padding: 0.5rem 0.4rem;
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    transition: all 0.4s ease;
+}
+
+.btn-horaris:hover {
+    color: white;
+    text-shadow: 0 0 1.5rem white;
+    transform: scale(1.1);
+    box-shadow: 1px 1px 10px black;
+    background: rgb(3, 3, 138);
     margin-top: 3rem;
     font-size: 1.5rem;
 }
@@ -279,13 +290,16 @@ li {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 4fr 0.5fr;
+    grid-template-areas: "map contacto" "footer footer";
     align-content: center;
     justify-items: center;
     z-index: 15;
 }
 
 .mapa-responsive {
+    grid-area: map;
+    align-self: center;
     margin-left: 2rem;
     height: 70vh;
     width: 50vh;
@@ -298,8 +312,35 @@ li {
 }
 
 .datos-contacto {
+    grid-area: contacto;
+    align-self: center;
     font-size: 2rem;
     line-height: 4rem;
+}
+
+.footer {
+    grid-area: footer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(14, 14, 88);
+    width: 100%;
+}
+
+.footer h6 {
+    color: white;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.footer a {
+    position: absolute;
+    bottom: 10%;
+    left: 1%;
+    color: white;
+    font-size: 0.5rem;
+    font-weight: normal;
 }
 
 .idioma {
@@ -309,7 +350,6 @@ li {
 main {
     position: relative;
     height: 100vh;
-    ;
 }
 
 .bolas {
@@ -318,7 +358,6 @@ main {
     border-radius: 50%;
     width: 15vw;
     height: 15vw;
-    ;
 }
 
 .bola4 {
