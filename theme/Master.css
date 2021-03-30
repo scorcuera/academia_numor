@@ -229,7 +229,7 @@ li {
     font-size: 1rem;
     line-height: 1.8rem;
     padding: 1rem 2rem;
-    z-index: 15;
+    z-index: 2;
 }
 
 .institut-container h3 {
@@ -282,6 +282,7 @@ li {
     grid-template-rows: auto;
     align-content: center;
     justify-items: center;
+    z-index: 15;
 }
 
 .mapa-responsive {
@@ -332,8 +333,10 @@ main {
     align-items: start;
     position: absolute;
     left: 15%;
+    right: 15%;
     bottom: -125vh;
     top: 80vh;
     width: 70vw;
     height: 70vw;
+    max-width: 150vh;
 }
