@@ -280,7 +280,18 @@ li {
 
 .examenes {
     grid-area: examenes;
+    display:flex;
+    flex-direction: column;
+    
+
 }
+
+.examenes img{
+   width: 9rem;
+   height: 5rem;
+   align-self: center;
+}
+
 
 .textoBanderaClick {
     transform: translate(0px, -5px);
@@ -315,7 +326,7 @@ li {
     grid-area: contacto;
     align-self: center;
     font-size: 2rem;
-    line-height: 4rem;
+    line-height: 3.5rem;
 }
 
 .footer {

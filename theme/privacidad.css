@@ -35,7 +35,6 @@
 }
 
 .btn-regresar {
-    grid-area: footer;
     position: absolute;
     font-size: 1.1rem;
     left: 2%;
