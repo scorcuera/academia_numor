@@ -11,7 +11,19 @@
     grid-template-columns: 1fr;
     grid-template-areas: "showcase" "horarios-precios";
     overflow-x: hidden;
-    background-color:rgb(151, 151, 190);
+    background-color:white;
+}
+
+.container-2{
+    
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "info-clases info-camp" "footer footer";
+    overflow-x: hidden;
+    background-color:white;
+    
 }
 
 .showcase-escuela {
@@ -22,6 +34,11 @@
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.institut-subtitulo {
+    color:rgb(14, 14, 88);
 }
 
 .horarios-precios {
@@ -69,6 +86,44 @@
 
 .info-precios div {
     width: 100%;
+}
+
+.info-clases{
+    grid-area: info-clases;
+    font-size: 1rem;
+    line-height: 1.6rem;  
+    display: flex;
+    flex-direction: column;
+}
+
+.info-clases p{
+    padding-bottom: 1rem;
+}
+.info-clases div{
+    width: 100%;
+}
+
+.info-camp{
+    grid-area: info-camp;
+    font-size: 1rem;
+    line-height: 1.6rem;  
+    display: flex;
+    flex-direction: column;
+}
+.info-camp p {
+    padding-bottom: 1rem;
+}
+.info-camp div{
+    width: 100%;
+}
+
+.container-2 h3 {
+    padding-bottom: 0.5rem;
+}
+
+.container-2 div {
+    padding: 1rem 1rem;
+    
 }
 
 .btn-regresar {
