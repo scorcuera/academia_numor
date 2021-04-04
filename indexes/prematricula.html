@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../theme/Master.css">
     <link rel="stylesheet" href="../theme/prematricula.css">
     <title>Inscripción</title>
 </head>
@@ -13,52 +14,26 @@
 <body>
     <form action="matricula.php" method="post">
 
-        <div>
-            <div style="text-align: center; "> </div>
-            <p style="text-align: center; font-weight: bold; color: red; height: 6px; "><big>DATOS PERSONALES DEL ALUMNO</big></p>
-            <div style="font-family: Courier New,Courier,monospace; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nombre:
-                <input tabindex="1" autofocus=" " size="25 " name="nombre "></div>
-            <span style="font-family: Courier New,Courier,monospace; ">Primer
-apellido : </span><input tabindex="2" size="25 " name="apellido1 ">
-            <span style="font-family: Courier New,Courier,monospace; ">Segundo
-apellido: </span><input style="font-family: Courier New,Courier,monospace; " size="25 " name="apellido2 " type="text "><span style="font-family: Courier New,Courier,monospace; "> </span><br style="font-family: Courier New,Courier,monospace; ">
-            <span style="font-family: Courier New,Courier,monospace; ">Fecha
-nacimiento: </span><input value="99/99/9999 " style="font-family: Courier New,Courier,monospace; " size="10 " name="nacimiento "><span style="font-family: Courier New,Courier,monospace; "> dia, mes y a�o</span><br style="font-family: Courier New,Courier,monospace; ">
-            <span style="font-family: Courier New,Courier,monospace; ">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-DNI: </span><input style="font-family: Courier New,Courier,monospace; " size="9 " name="dni " value="si tiene " type="text "><span style="font-family: Courier New,Courier,monospace; "> </span><br style="font-family: Courier New,Courier,monospace;
-            "> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <span style="font-family: Courier New,Courier,monospace; ">Domicilio
-: </span><input style="font-family: Courier New,Courier,monospace; " size="35 " name="domicilio " value="calle, nombre, numero, piso " type="text "><span style="font-family: Courier New,Courier,monospace; ">
-  </span><br style="font-family: Courier New,Courier,monospace; "> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            Población :
-  </span><input style="font-family: Courier New,Courier,monospace; " size="25 " name="poblacion " type="text "><br>
-            <span style="font-family: Courier New,Courier,monospace; ">Código
-postal : <input size="5 " name="codpost " type="text "><br>
-            Teléfono
-móvil: <input size="9" name="tmovil" type="text "><br>
-            <span>Teléfono
-fijo :<input  size="9" name="tfijo" type="text "><br>
-          
- Correo-e:<input name="suemail" value="mimail@miservidor.com" size="45" type="email"><br>
-  Fue alumno antes :<input name="alumno" type="checkbox"><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Idioma : </span><input size="35" name="idioma"> <br>
-  &nbsp;&nbsp;
-Dias preferentes: </span></span>
-            </span><input name="susdias"  type="text"><br>
-            Horario
-preferente: </span></span>
-            </span>
-            </span><input name="sushoras" type="textl">
-            <br>
- Horas semanales: <input maxlength="3" size="3" name="cuantashoras" value="1"> <br>
- Nombre
-padres/tutor:<input size="45 " name="tutor" type="text "><br>
-Notas : </span></span>
-            </span>
-            </span><textarea cols="25 " name="notas " type="text "></textarea></span><br>
-            <input value="enviar" type="submit"> </span>
-            </span>
-            </span>
+        <div class="form-container">
+            <div class="form-group"><label>Nombre:</label><input tabindex="1" autofocus=" " size="25" name="nombre"></div>
+            <div class="form-group"><label>Primer apellido :</label><input tabindex="2" size="25" name="apellido1"></div>
+            <div class="form-group"><label>Segundo apellido:</label><input size="25" name="apellido2" type="text"></div>
+            <div class="form-group"><label>Fecha nacimiento:</label><input size="10" name="nacimiento"></div>
+            <div class="form-group"><label>DNI/NIE:</label><input size="9" name="dni" type="text"></div>
+            <div class="form-group"><label>Domicilio:</label><input size="35" name="domicilio" type="text"></div>
+            <div class="form-group"><label>Población :</label><input size="25" name="poblacion" type="text"></div>
+            <div class="form-group"><label>Código postal :</label><input size="5" name="codpost" type="text"></div>
+            <div class="form-group"><label>Teléfono móvil:</label><input size="9" name="tmovil" type="text"></div>
+            <div class="form-group"><label>Teléfono fijo :</label><input  size="9" name="tfijo" type="text"></div>
+            <div class="form-group"><label>Correo-e:</label><input name="suemail" size="45" type="email"></div>
+            <div class="form-group"><label>Fue alumno antes :</label><label><input name="alumno" type="checkbox">Si</label></div>
+            <div class="form-group"><label>Idioma :</label><input size="35" name="idioma"></div>
+            <div class="form-group"><label>Dias preferentes:</label><input name="susdias" type="text"></div>
+            <div class="form-group"><label>Horario preferente</label><input name="sushoras" type="textl"></div>
+            <div class="form-group"><label>Horas semanales</label><input maxlength="3" size="3" name="cuantashoras" value="1"></div>
+            <div class="form-group"><label>Nombre de padres/ tutor</label><input size="45" name="tutor" type="text"></div>
+            <div class="form-group"><label>Comentarios</label><textarea cols="25" name="notas" type="text"></textarea></div>
+            <div class="form-group"><button class="btn-submit" value="enviar" type="submit"> Enviar</button></div>
         </div>
     </form>
 
