@@ -1,13 +1,20 @@
 body{
-    background-color: rgba(35, 29, 121, 0.74);
+    background-color: rgba(9, 3, 90, 0.959);
+    width:100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 form {
-    margin: 2rem auto;
+    
+    margin: 1rem 1rem;
     background-color: rgb(161, 176, 219);
-    width: 50%;
+    width: 70vw;
     /* To see the limits of the form */
-    padding: 1em;
+    padding: 1rem;
     border: none;
     border-radius: 1rem;
     font-size: 1rem;
@@ -36,8 +43,10 @@ div+div {
 
 .btn-submit{
     color: white;
+    font-size: 1rem;
+    font-weight: bold;
     padding: 0.5rem 0rem;
-    background: rgb(86, 219, 119);
+    background: rgb(59, 163, 85);
     border: none;
     transition: all ease 0.4s;
 }
@@ -62,4 +71,13 @@ textarea {
     /* To allow users to resize any textarea vertically
      It works only on Chrome, Firefox and Safari */
     resize: vertical;
+}
+
+@media screen and (min-width: 1024px){
+    form {
+        max-width: 50vw;
+
+    }
+    
+    
 }
