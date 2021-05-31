@@ -1,3 +1,4 @@
+
 .container-horarios {
     overflow-x: hidden;
     background-color: white;
@@ -138,6 +139,7 @@
 }
 
 .footer {
+    width: 100%;
     grid-area: footer;
     min-height: 10vh;
 }
@@ -181,7 +183,7 @@
     }
     
     .container-2{
-    
+     
         height: auto;
         display: grid;
         grid-template-rows: auto;
@@ -190,11 +192,30 @@
         
     }
 
-    .container-2 div {
+    .info-clases, .info-camp {
         width: 90%;
-        padding: 1rem 1rem;
+    
+    }
+
+    .footer{
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width:769px){
+
+    .container-1{
+    
+        height: 100vh;
+        grid-template-rows: auto;
         
+       
     }
     
-   
+    .container-2{
+     
+        height: 100vh;
+    
+    }
 }
