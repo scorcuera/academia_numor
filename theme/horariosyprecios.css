@@ -89,6 +89,7 @@
 }
 
 .info-clases{
+    height: auto;
     grid-area: info-clases;
     font-size: 1rem;
     line-height: 1.6rem;  
@@ -139,4 +140,61 @@
 .footer {
     grid-area: footer;
     min-height: 10vh;
+}
+
+@media screen and (max-width: 768px){
+    
+    
+    .showcase-escuela {
+        grid-area: showcase;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        padding-bottom: 2rem;
+    }
+    
+    .horarios-precios {
+        grid-area: horarios-precios;
+        display: grid;
+        
+    }
+    
+    .horarios-precios h3{
+        padding-top: 0rem;
+        
+    }
+    
+    .horarios-precios div {
+        width: 90%;
+        padding: 1rem 1rem;
+        
+    }
+
+    .container-1{
+    
+        height: auto;
+        grid-template-rows: auto;
+       
+    }
+    
+    .container-2{
+    
+        height: auto;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: "info-clases" "info-camp" "footer";
+        
+    }
+
+    .container-2 div {
+        width: 90%;
+        padding: 1rem 1rem;
+        
+    }
+    
+   
 }
